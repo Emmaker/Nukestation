@@ -1,2 +1,2 @@
 greenshift-title = Greenshift
-greenshift-description = An event-less preset for admin events to play through without interference.
+greenshift-description = A calm shift with no randomly occuring antag events. Restarts after a certain amount of time.

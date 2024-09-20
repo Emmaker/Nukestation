@@ -154,7 +154,7 @@ namespace Content.Shared.CCVar
         ///     Controls the default game preset.
         /// </summary>
         public static readonly CVarDef<string>
-            GameLobbyDefaultPreset = CVarDef.Create("game.defaultpreset", "secret", CVar.ARCHIVE);
+            GameLobbyDefaultPreset = CVarDef.Create("game.defaultpreset", "blueshift", CVar.ARCHIVE);
 
         /// <summary>
         ///     Controls if the game can force a different preset if the current preset's criteria are not met.
@@ -197,18 +197,6 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<int> // 12 Minutes
             GameEventsRampingMaximumTime = CVarDef.Create("game.events_ramping_maximum_time", 720, CVar.SERVERONLY | CVar.ARCHIVE);
-
-        /// <summary>
-        ///     Minimum time between Oscillating station events in seconds. This is the bare minimum which will never be violated, unlike with ramping events.
-        /// </summary>
-        public static readonly CVarDef<int> // 40 seconds
-            GameEventsOscillatingMinimumTime = CVarDef.Create("game.events_oscillating_minimum_time", 40, CVar.SERVERONLY | CVar.ARCHIVE);
-
-        /// <summary>
-        ///     Time between Oscillating station events in seconds at 1x chaos level. Events may occur at larger intervals if current chaos is lower than that.
-        /// </summary>
-        public static readonly CVarDef<int> // 20 Minutes - which constitutes a minimum of 120 seconds between events in Irregular and 280 seconds in Extended Irregular
-            GameEventsOscillatingAverageTime = CVarDef.Create("game.events_oscillating_average_time", 1200, CVar.SERVERONLY | CVar.ARCHIVE);
 
         /// <summary>
         ///     Controls the maximum number of character slots a player is allowed to have.
@@ -2470,9 +2458,9 @@ namespace Content.Shared.CCVar
 
         public static readonly CVarDef<bool> HoldLookUp =
             CVarDef.Create("rest.hold_look_up", false, CVar.CLIENT | CVar.ARCHIVE);
-            
+
         #endregion
-        
+
         #region Material Reclaimer
 
         /// <summary>
