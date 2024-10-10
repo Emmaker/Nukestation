@@ -199,6 +199,8 @@ ghost-role-information-cburn-agent-description = A highly trained CentCom agent,
 ghost-role-information-centcom-official-name = CentComm official
 ghost-role-information-centcom-official-description = Perform CentComm related duties such as inspect the station, jotting down performance reviews for heads of staff, and managing the fax machine.
 
+ghost-role-information-nukeop-name = Nuclear Operative
+ghost-role-information-nukeop-description = You are a nuclear operative. Destroy the station!
 ghost-role-information-nukeop-rules = You are a syndicate operative tasked with the destruction of the station. As an antagonist, do whatever is required to complete this task.
 
 ghost-role-information-loneop-name = Lone Operative

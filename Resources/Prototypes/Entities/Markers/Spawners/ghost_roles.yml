@@ -63,9 +63,10 @@
   parent: MarkerBase
   components:
   - type: GhostRole
+    name: ghost-role-information-nukeop-name
+    description: ghost-role-information-nukeop-description
     rules: ghost-role-information-nukeop-rules
-  - type: GhostRoleMobSpawner
-    prototype: MobHumanNukeOp
+  - type: GhostRoleAntagSpawner
   - type: Sprite
     sprite: Markers/jobs.rsi
     layers:
@@ -84,12 +85,6 @@
     name: ghost-role-information-loneop-name
     description: ghost-role-information-loneop-description
     rules: ghost-role-information-loneop-rules
-    requirements:
-    - !type:CharacterOverallTimeRequirement
-      min: 172800 # DeltaV - 48 hours
-    - !type:DepartmentTimeRequirement # DeltaV - Security dept time requirement
-      department: Security
-      time: 36000 # DeltaV - 10 hours
   - type: GhostRoleAntagSpawner
   - type: Sprite
     sprite: Markers/jobs.rsi
